@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "054beae4-99a0-47be-8ce7-320ea16e059e",
+		"name": "express-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://warm-reef-90744.herokuapp.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"warm-reef-90744",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"cc 雷蒙\",\r\n    \"content\":\"作業都寫不完，崩潰!!\",\r\n    \"likes\":99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://warm-reef-90744.herokuapp.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"warm-reef-90744",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://warm-reef-90744.herokuapp.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"warm-reef-90744",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://warm-reef-90744.herokuapp.com/api/posts/6273ebd1e5b5e7775897cb22",
+					"protocol": "https",
+					"host": [
+						"warm-reef-90744",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						"6273ebd1e5b5e7775897cb22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改一筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"我要改名喔喔喔喔喔\",\r\n    \"content\":\"會不會暴斃\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://warm-reef-90744.herokuapp.com/api/posts/6273ec31e5b5e7775897cb29",
+					"protocol": "https",
+					"host": [
+						"warm-reef-90744",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						"6273ec31e5b5e7775897cb29"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
